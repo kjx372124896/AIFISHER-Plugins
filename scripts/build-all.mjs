@@ -9,8 +9,10 @@ const distDir = path.join(root, 'dist');
 
 function run(command, args, cwd = root) {
   return new Promise((resolve, reject) => {
-    const executable = process.platform === 'win32' && command === 'npm' ? 'npm.cmd' : command;
-    const child = spawn(executable, args, {
+    const npmCli = command === 'npm' ? process.env.npm_execpath : null;
+    const executable = npmCli ? process.execPath : command;
+    const finalArgs = npmCli ? [npmCli, ...args] : args;
+    const child = spawn(executable, finalArgs, {
       cwd,
       stdio: 'inherit',
       shell: false,
