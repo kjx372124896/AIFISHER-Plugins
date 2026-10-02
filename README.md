@@ -4,6 +4,8 @@
 
 每个插件目录均可单独构建，构建产物位于各自 `dist/`。AIFISHER 可直接粘贴本仓库 URL、插件子目录 URL、GitHub blob/raw JS URL 进行安装和更新。
 
+根目录同时提供统一 `dist/`，汇总全部可直接安装的插件 JS。执行 `npm run build` 会依次构建所有插件，并自动同步到根目录 `dist/`。
+
 推荐 GitHub 结构：
 - `<plugin>/aifisher-plugin.json`
 - `<plugin>/dist/<plugin>.js`
