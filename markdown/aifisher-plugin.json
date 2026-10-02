@@ -1,0 +1,5 @@
+﻿{
+    "schemaVersion":  1,
+    "entry":  "dist/markdown.js",
+    "type":  "aifisher-canvas-plugin"
+}

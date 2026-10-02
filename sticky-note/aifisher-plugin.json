@@ -1,0 +1,5 @@
+﻿{
+    "schemaVersion":  1,
+    "entry":  "dist/sticky-note.js",
+    "type":  "aifisher-canvas-plugin"
+}

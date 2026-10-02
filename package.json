@@ -1,0 +1,1 @@
+﻿{"name":"aifisher-plugins","private":true,"version":"1.0.0","workspaces":["sdk","html","markdown","panorama","prompt-optimizer","sticky-note","svg"],"scripts":{"build:prompt-optimizer":"npm --workspace prompt-optimizer run build","typecheck:prompt-optimizer":"npm --workspace prompt-optimizer run typecheck"}}
